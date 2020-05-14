@@ -1,0 +1,31 @@
+Fieldset{
+    border-radius: 5px;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 50px;
+    /*border: 1px solid black;*/
+    margin: 5px auto;
+}
+
+.task-form {
+    width: 50%;
+}
+
+.task-result__container {
+    width:50%;
+    Height: auto;
+}
+
+.radio-row {
+    margin:5px auto;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}

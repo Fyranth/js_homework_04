@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/hw04.css">
+        <script src="./js/hw04.js"></script>
+    </head>
+    <body>
+        <!--блок первого задания-->
+        <div class="task-container">
+            <form class="task-form" onsubmit="return false;">
+                <Fieldset>
+                    <legend>Задача №1</legend>
+                    <label for="tsk01-number">Введите целое число</label>
+                    <input id="tsk01-number" type="number" min="1" value="3578964" step="1" required>
+                    <button type="button" onclick="task01();">Ок</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-01"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div> 
+        <!--блок второго задания-->
+        <div class="task-container">
+            <form class="task-form"  onsubmit="return false;">
+                <Fieldset class="column">
+                    <legend>Задача №2</legend>
+                    <label for="tsk02-str">Введите строку</label><input id="tsk02-str" type="text" value="Три тополя. 2 березы!" required>
+                    <label for="tsk02-smbl">Введите символ</label><input id="tsk02-smbl" type="text" maxlength="1" required oninput="task02_symbol_validate()">
+                    <button type="button" onclick="task02();">Ок</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-02"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--блок третьего задания-->
+        <div class="task-container">
+            <form class="task-form"  onsubmit="return false;">
+                <Fieldset class="column">
+                    <legend>Задача №3</legend>
+                    <label for="tsk03-str">Введите пароль</label><input id="tsk03-str" type="text" required>
+                    <p>- длинна от 9 символов;<br>- содержит обязательно английские буквы верхнего и нижнего регистра;<br>- содержит более двух цифр;<br>- содержит обязательно один из неалфавитных символов (например, !, $, #, %).</p>
+                    <button type="button" onclick="task03();">Ок</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-03"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!--блок третьего задания-->
+        <div class="task-container">
+            <form class="task-form"  onsubmit="return false;">
+                <Fieldset class="column">
+                    <legend>Задача №4</legend>
+                    <h4>Строка источник</h4>
+                    <p id="tsk04-str">Понедельник Вторник Среда Четверг Пятница Суббота Воскресенье</p>
+                    <label for="tsk04-fnd">Введите слово для поиска</label><input id="tsk04-fnd" type="text" value="Срида" required>
+                    <button type="button" onclick="task04();">Ок</button>   
+                </Fieldset>
+            </form>
+            <div class="task-result__container">
+                <form class="task-result__form">
+                    <fieldset>
+                        <legend>Результат</legend>
+                        <p class="task-result" id="task-result-04"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>

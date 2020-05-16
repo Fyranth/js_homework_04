@@ -81,7 +81,9 @@ function task04() {
         let str_init = str_arr[i];
         let n=0;
         for(let j=0; j<fnd_arr.length; j++) {
-            let reg = new RegExp(`(?=.*)${fnd_arr[j]}`,"ig");
+            //let reg = new RegExp(`(?=.*)${fnd_arr[j]}`,"i");
+            let reg = new RegExp(`^.{${j}}${fnd_arr[j]}.{${str_init.length-(j+1)}}$`,"i");
+            console.log(str_init, reg, reg.test(str_init));
             if(reg.test(str_init)) {
                 n += 1;
             }

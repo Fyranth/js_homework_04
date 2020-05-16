@@ -82,7 +82,10 @@ function task04() {
         let n=0;
         for(let j=0; j<fnd_arr.length; j++) {
             //let reg = new RegExp(`(?=.*)${fnd_arr[j]}`,"i");
-            let reg = new RegExp(`^.{${j}}${fnd_arr[j]}.{${str_init.length-(j+1)}}$`,"i");
+            //Добавил количество предшествующих символов в слове.
+            //let reg = new RegExp(`^.{${j}}${fnd_arr[j]}.{${str_init.length-(j+1)}}$`,"i");
+            //Хотя скорее всего закрывашка в регулярке это оверкил.
+            let reg = new RegExp(`^.{${j}}${fnd_arr[j]}`,"i");
             console.log(str_init, reg, reg.test(str_init));
             if(reg.test(str_init)) {
                 n += 1;
